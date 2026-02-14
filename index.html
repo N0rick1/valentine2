@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Chaser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="game-screen" class="screen active">
+            <h1>Heart Chaser</h1>
+            <p>¡Atrapa mi corazón si puedes! 🧸</p>
+            <div class="machine">
+                <div class="claw-container">
+                    <div id="claw" class="claw">J</div>
+                </div>
+                <div id="heart" class="heart">❤️</div>
+            </div>
+            <button id="seize-btn">SEIZE MY HEART</button>
+        </div>
+
+        <div id="letter-screen" class="screen">
+            <div class="letter">
+                <h2>Mi Querida/o,</h2>
+                <p>A veces me pregunto cómo tuve tanta suerte de tenerte...</p>
+                <p>Eres mi consuelo y mi emoción al mismo tiempo.</p>
+                <p>Con todo mi amor, Jude.</p>
+                <button onclick="nextScreen('valentine-screen')">Continuar ❤️</button>
+            </div>
+        </div>
+
+        <div id="valentine-screen" class="screen">
+            <h2>¿Quieres ser mi San Valentín?</h2>
+            <div class="btns">
+                <button id="yes-btn">¡SÍ!</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
